@@ -1,0 +1,121 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F7FF;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #8b5cf6;
+    margin-top: 6rem;
+  }
+
+  .subtitle {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #3F4658;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 17rem;
+    height: 19.75rem;
+    margin-top: 2.5rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 15rem;
+    border-radius: 1rem;
+    border: 1px solid #E2E2E2;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .card.show-answer {
+    background-color: #E7DDFF;
+  }
+
+  .cardQuestion {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #1E1E1E;
+    padding: 1.5rem;
+    text-align: center;
+  }
+ 
+  .cardAnswer {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #3F4658;
+    padding: 1.5rem;
+    text-align: center;
+    display: none; 
+  }
+
+  .card.show-answer .cardQuestion {
+    display: none;
+  }
+
+  .card.show-answer .cardAnswer {
+    display: block;
+  }
+
+  .description {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #3F4658;
+
+    .card {
+        background-color: #E7DDFF;
+      }
+  }
+
+.button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   justify-self: center;
+   background-color: #6A3FCB;
+   width: auto;
+   height: 2.5rem;
+   border-radius: 0.5rem;
+   border: none;
+   cursor: pointer;
+   margin-top: 1.5rem;
+   padding: 0 1rem;
+   font-family: "Inter", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 600;
+   font-size:0.875rem;
+   color: #FFFFFF;
+
+   &:hover {
+    background-color: #8B5CF6;
+   }
+  }
+
+  
